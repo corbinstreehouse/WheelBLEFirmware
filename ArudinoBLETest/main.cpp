@@ -2027,7 +2027,7 @@ int main(void)
 #endif                                                                          // end IDE
 
 // Sketch
-#include "ArudinoBLETest.ino"
+//#include "ArudinoBLETest.ino"
 
 
 #endif                                                                          // end embedXcode

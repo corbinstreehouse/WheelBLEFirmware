@@ -21,10 +21,16 @@
 # List application Arduino/chipKIT/Digispark/Energia/Maple/Microduino/Teensy/Wiring libraries here
 # default = 0 = none
 #
-APP_LIBS_LIST = 0
+# ARDUINO : AVR = EEPROM HID SoftwareSerial SPI Wire 
+# ARDUINO = Bridge Esplora Ethernet Firmata GSM 
+#	LiquidCrystal Robot_Control Robot_Motor RobotIRremote SD Servo 
+#	SpacebrewYun Stepper Temboo TFT WiFi 
+#
+APP_LIBS_LIST = BLE_API mbed
 
 # List user's libraries here 
 # default = 0 = none
+#
 #
 USER_LIBS_LIST = 0
 
@@ -72,10 +78,11 @@ CURRENT_DIR   := $(shell echo '$(CURRENT_DIR)' | sed 's/ /\\\ /g')
 # C-compliant project name
 #
 PROJECT_NAME_AS_IDENTIFIER = ArudinoBLETest
-SKETCH_EXTENSION = ino
+SKETCH_EXTENSION = _main_cpp_only_
 
 MAKEFILE_PATH  = $(CURRENT_DIR)/Makefiles
 UTILITIES_PATH = $(CURRENT_DIR)/Utilities
 
 include $(MAKEFILE_PATH)/Step1.mk
+
 

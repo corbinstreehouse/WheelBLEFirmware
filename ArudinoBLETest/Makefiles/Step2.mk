@@ -865,6 +865,8 @@ all: 		info message_all clean compile reset raw_upload serial end_all prepare
 
 build: 		info message_build clean compile end_build prepare
 
+build_no_clean: 		info message_build compile end_build prepare
+
 
 compile:	info message_compile $(OBJDIR) $(TARGET_HEXBIN) $(TARGET_EEP) size
 		@echo $(BOARD_TAG) > $(NEW_TAG)
@@ -884,7 +886,7 @@ $(DEP_FILE):	$(OBJDIR) $(DEPS)
 		@cat $(DEPS) > $(DEP_FILE)
 
 
-upload:		message_upload reset raw_upload
+upload:		build_no_clean message_upload reset raw_upload
 		@echo "==== upload done ==== "
 
 
