@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9D7D424F1C27C120008F76E5"
-               BuildableName = "All"
-               BlueprintName = "All"
+               BlueprintIdentifier = "9D7D42EC1C27C970008F76E5"
+               BuildableName = "Make (Fast)"
+               BlueprintName = "Make (Fast)"
                ReferencedContainer = "container:ArudinoBLETest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9D7D424F1C27C120008F76E5"
-            BuildableName = "All"
-            BlueprintName = "All"
+            BlueprintIdentifier = "9D7D42EC1C27C970008F76E5"
+            BuildableName = "Make (Fast)"
+            BlueprintName = "Make (Fast)"
             ReferencedContainer = "container:ArudinoBLETest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9D7D424F1C27C120008F76E5"
-            BuildableName = "All"
-            BlueprintName = "All"
+            BlueprintIdentifier = "9D7D42EC1C27C970008F76E5"
+            BuildableName = "Make (Fast)"
+            BlueprintName = "Make (Fast)"
             ReferencedContainer = "container:ArudinoBLETest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
