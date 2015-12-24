@@ -17,7 +17,7 @@
                BlueprintIdentifier = "9D7D42551C27C120008F76E5"
                BuildableName = "Index"
                BlueprintName = "Index"
-               ReferencedContainer = "container:../../../Volumes/Fern/corbin/Projects/WheelBLEFirmware/WheelBLEFirmware.xcodeproj">
+               ReferencedContainer = "container:WheelBLEFirmware.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "9D7D42551C27C120008F76E5"
             BuildableName = "Index"
             BlueprintName = "Index"
-            ReferencedContainer = "container:../../../Volumes/Fern/corbin/Projects/WheelBLEFirmware/WheelBLEFirmware.xcodeproj">
+            ReferencedContainer = "container:WheelBLEFirmware.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "9D7D42551C27C120008F76E5"
             BuildableName = "Index"
             BlueprintName = "Index"
-            ReferencedContainer = "container:../../../Volumes/Fern/corbin/Projects/WheelBLEFirmware/WheelBLEFirmware.xcodeproj">
+            ReferencedContainer = "container:WheelBLEFirmware.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "9D7D42551C27C120008F76E5"
             BuildableName = "Index"
             BlueprintName = "Index"
-            ReferencedContainer = "container:../../../Volumes/Fern/corbin/Projects/WheelBLEFirmware/WheelBLEFirmware.xcodeproj">
+            ReferencedContainer = "container:WheelBLEFirmware.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

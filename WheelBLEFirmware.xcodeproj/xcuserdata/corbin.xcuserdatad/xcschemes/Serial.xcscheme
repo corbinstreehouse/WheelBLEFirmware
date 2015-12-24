@@ -17,7 +17,7 @@
                BlueprintIdentifier = "9D7D42521C27C120008F76E5"
                BuildableName = "Serial"
                BlueprintName = "Serial"
-               ReferencedContainer = "container:../../../Volumes/Fern/corbin/Projects/WheelBLEFirmware/WheelBLEFirmware.xcodeproj">
+               ReferencedContainer = "container:WheelBLEFirmware.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,7 +48,7 @@
             BlueprintIdentifier = "9D7D42521C27C120008F76E5"
             BuildableName = "Serial"
             BlueprintName = "Serial"
-            ReferencedContainer = "container:../../../Volumes/Fern/corbin/Projects/WheelBLEFirmware/WheelBLEFirmware.xcodeproj">
+            ReferencedContainer = "container:WheelBLEFirmware.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,7 +66,7 @@
             BlueprintIdentifier = "9D7D42521C27C120008F76E5"
             BuildableName = "Serial"
             BlueprintName = "Serial"
-            ReferencedContainer = "container:../../../Volumes/Fern/corbin/Projects/WheelBLEFirmware/WheelBLEFirmware.xcodeproj">
+            ReferencedContainer = "container:WheelBLEFirmware.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
