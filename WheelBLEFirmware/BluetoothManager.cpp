@@ -13,7 +13,7 @@
 #define LONG_NAME "LED Cyr Wheel"
 
 
-// Services supported
+BluetoothManager *g_currentManager = NULL;
 
 
 
@@ -26,7 +26,7 @@ void disconnectionCallBack(Gap::Handle_t handle, Gap::DisconnectionReason_t reas
 {
     Serial.println("Disconnected ");
     Serial.println("Restart advertising ");
-//    g_currentManager->startAdvertising();
+    g_currentManager->startAdvertising();
 }
 
 // GATT call back handle
@@ -35,7 +35,6 @@ void onDataWrittenHandler(const GattWriteCallbackParams *handler)
 //    uint8_t buf[TXRX_BUF_LEN];
 //    uint16_t bytesRead, index;
     
-    Serial.println("Write Handle : ");
 //    if (handler->handle == characteristic1.getValueAttribute().getHandle())
 //    {
 //        ble.readCharacteristicValue(characteristic1.getValueAttribute().getHandle(), buf, &bytesRead);
@@ -47,6 +46,13 @@ void onDataWrittenHandler(const GattWriteCallbackParams *handler)
 //    }
 }
 
+void onTimeoutCallback(Gap::TimeoutSource_t source) {
+    DEBUG_PRINTF("timeout, source: %d\r\n", source);
+//    char buffer[1024];
+//    sprintf(buffer, "timeout, source: %d\r\n", source);
+//    Serial.print(buffer);
+}
+
 BluetoothManager::BluetoothManager() :
     m_wheelService(NULL)
 {
@@ -55,15 +61,14 @@ BluetoothManager::BluetoothManager() :
 
 
 void BluetoothManager::setup() {
-
-    // hack
-    int led2 = 13;
-    pinMode(led2, OUTPUT);
-    digitalWrite(led2, LOW);   // low turns it on??
+    g_currentManager = this;
     
 #if DEBUG
-    DEBUG_PRINTLN("setup");
-    delay(1000);
+    int led2 = 13;
+    pinMode(led2, OUTPUT);
+    digitalWrite(led2, LOW);   // low turns it on? whatever.. it is on for debugging.
+    
+    DEBUG_PRINTLN("setup.....");
 #endif
     
     
@@ -71,30 +76,26 @@ void BluetoothManager::setup() {
     
     // Setup our handlers for connections
     m_ble.onConnection(connectionCallback);
-//    m_ble.gap().onDisconnection(disconnectionCallBack);
+    m_ble.gap().onDisconnection(disconnectionCallBack);
     
     // attribute server handlers
     m_ble.onDataWritten(onDataWrittenHandler);
     
+    m_ble.gap().onTimeout(onTimeoutCallback);
+    
     // setup adv_data and srp_data
     m_ble.accumulateAdvertisingPayload(GapAdvertisingData::BREDR_NOT_SUPPORTED);
 //    m_ble.accumulateAdvertisingPayload(GapAdvertisingData::SHORTENED_LOCAL_NAME, (const uint8_t *)SHORT_NAME, sizeof(SHORT_NAME) - 1);
-
-    // longest length: BLE_GAP_DEVNAME_MAX_LEN // 31
-    m_ble.accumulateAdvertisingPayload(GapAdvertisingData::COMPLETE_LOCAL_NAME,
-                                     (const uint8_t *)"LED Cyr Wheel", sizeof("LED Cyr Wheel") - 1);
-
+//    m_ble.accumulateAdvertisingPayload(GapAdvertisingData::COMPLETE_LOCAL_NAME,                            (const uint8_t *)"LED Cyr Wheel", sizeof("LED Cyr Wheel") - 1);
     
-//    m_ble.accumulateAdvertisingPayload(GapAdvertisingData::COMPLETE_LIST_128BIT_SERVICE_IDS, WheelService::UUID_WHEEL_SERVICE, sizeof(WheelService::UUID_WHEEL_SERVICE));
-    static const uint8_t uart_base_uuid_rev[]           = kLEDWheelServiceUUID_BYTE_ARRAY;
-    m_ble.accumulateAdvertisingPayload(GapAdvertisingData::COMPLETE_LIST_128BIT_SERVICE_IDS, uart_base_uuid_rev, sizeof(uart_base_uuid_rev));
-
-    
-    
+    m_ble.accumulateAdvertisingPayload(GapAdvertisingData::INCOMPLETE_LIST_128BIT_SERVICE_IDS, WheelService::UUID_WHEEL_SERVICE, sizeof(WheelService::UUID_WHEEL_SERVICE));
     
 //    m_ble.accumulateScanResponse(GapAdvertisingData::SHORTENED_LOCAL_NAME, (const uint8_t *)SHORT_NAME, sizeof(SHORT_NAME) - 1);
-//    m_ble.accumulateScanResponse(GapAdvertisingData::COMPLETE_LIST_128BIT_SERVICE_IDS, (const uint8_t *)WheelService::UUID_WHEEL_SERVICE, sizeof(WheelService::UUID_WHEEL_SERVICE));
-//    m_ble.setDeviceName((uint8_t*)LONG_NAME);
+    m_ble.accumulateScanResponse(GapAdvertisingData::INCOMPLETE_LIST_128BIT_SERVICE_IDS, (const uint8_t *)WheelService::UUID_WHEEL_SERVICE, sizeof(WheelService::UUID_WHEEL_SERVICE));
+    
+    
+    // NOTE: longest length: BLE_GAP_DEVNAME_MAX_LEN // 31
+    m_ble.setDeviceName((uint8_t*)LONG_NAME);
     
     // set adv_type
     m_ble.setAdvertisingType(GapAdvertisingParams::ADV_CONNECTABLE_UNDIRECTED);
@@ -104,19 +105,16 @@ void BluetoothManager::setup() {
     // create our services
     m_wheelService = new WheelService(m_ble); // TODO: free?
     
-//    m_sendCommandCharacteristic(UUID_CHAR_SEND_COMMAND, &m_command)
-//
-//    GattCharacteristic *charTable[] = {&m_sendCommandCharacteristic};
-//    GattService wheelService(WheelService::UUID_WHEEL_SERVICE, charTable, sizeof(charTable) / sizeof(GattCharacteristic *));
-//    m_ble.addService(wheelService);
-
-    
-
     // set tx power,valid values are -40, -20, -16, -12, -8, -4, 0, 4
     m_ble.setTxPower(4);
     
     // set adv_interval, 100ms in multiples of 0.625ms.
-    m_ble.setAdvertisingInterval(160);
+//    m_ble.setAdvertisingInterval(160); // 20ms is min. 160 was "default".
+    m_ble.gap().setAdvertisingInterval(20); // 20 is the min!
+    
+    // slave latency to 0
+    
+    
     // set adv_timeout, in seconds
     m_ble.setAdvertisingTimeout(0);
 

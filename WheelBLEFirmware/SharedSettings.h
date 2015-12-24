@@ -15,7 +15,7 @@
 #if DEBUG
 #warning "DEBUG CODE IS ON!!!! LEDCommon.h"
     #define DEBUG_PRINTLN(a) Serial.println(a)
-    #define DEBUG_PRINTF(a, ...) Serial.printf(a, ##__VA_ARGS__)
+    #define DEBUG_PRINTF(a, ...) char buffer[1024]; sprintf(buffer, a, ##__VA_ARGS__); Serial.print(buffer);
 #else
     #define DEBUG_PRINTLN(a)
     #define DEBUG_PRINTF(a, ...)

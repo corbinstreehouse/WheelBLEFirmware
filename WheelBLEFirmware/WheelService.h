@@ -25,6 +25,8 @@ public:
             return 0;
         }
     }
+protected:
+    virtual void handleDataWritten() override;
 };
 
 
