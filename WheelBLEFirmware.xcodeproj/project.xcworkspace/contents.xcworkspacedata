@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ArudinoBLETest.xcodeproj">
+      location = "self:/Volumes/Fern/corbin/Projects/WheelBLEFirmware/WheelBLEFirmware.xcodeproj">
    </FileRef>
 </Workspace>

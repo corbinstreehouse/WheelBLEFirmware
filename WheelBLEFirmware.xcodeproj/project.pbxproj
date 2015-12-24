@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D7D425A1C27C120008F76E5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D42591C27C120008F76E5 /* main.cpp */; };
-		9D7D42EB1C27C83A008F76E5 /* ArduinoBLETest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D42EA1C27C83A008F76E5 /* ArduinoBLETest.cpp */; };
+		9D7D42EB1C27C83A008F76E5 /* WheelFirmwareMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D42EA1C27C83A008F76E5 /* WheelFirmwareMain.cpp */; };
 		9D7D44A41C291214008F76E5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43261C291213008F76E5 /* README.md */; };
 		9D7D44A51C291214008F76E5 /* BLE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43281C291213008F76E5 /* BLE.cpp */; };
 		9D7D44A61C291214008F76E5 /* DiscoveredCharacteristic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43291C291213008F76E5 /* DiscoveredCharacteristic.cpp */; };
@@ -118,6 +118,8 @@
 		9D7D450E1C291214008F76E5 /* WMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D449E1C291214008F76E5 /* WMath.cpp */; };
 		9D7D450F1C291214008F76E5 /* WStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44A01C291214008F76E5 /* WStream.cpp */; };
 		9D7D45101C291214008F76E5 /* WString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44A21C291214008F76E5 /* WString.cpp */; };
+		9D7D45131C2A3319008F76E5 /* BluetoothManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D45111C2A3319008F76E5 /* BluetoothManager.cpp */; };
+		9D7D45171C2A48A8008F76E5 /* WheelService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D45151C2A48A8008F76E5 /* WheelService.cpp */; };
 		AA2A151220212328AA000005 /* abi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAAA151220212328AA000005 /* abi.cpp */; };
 		AA2A151220212328AA000006 /* Arduino.h in Sources */ = {isa = PBXBuildFile; fileRef = AAAA151220212328AA000006 /* Arduino.h */; };
 		AA2A151220212328AA000007 /* binary.h in Sources */ = {isa = PBXBuildFile; fileRef = AAAA151220212328AA000007 /* binary.h */; };
@@ -637,7 +639,7 @@
 		9D7D42D21C27C120008F76E5 /* embedXcode_chrono */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = embedXcode_chrono; path = Utilities/embedXcode_chrono; sourceTree = "<group>"; };
 		9D7D42D31C27C120008F76E5 /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = TemplateIcon.icns; path = Utilities/TemplateIcon.icns; sourceTree = "<group>"; };
 		9D7D42D41C27C120008F76E5 /* uploader_izmir.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = uploader_izmir.sh; path = Utilities/uploader_izmir.sh; sourceTree = "<group>"; };
-		9D7D42EA1C27C83A008F76E5 /* ArduinoBLETest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArduinoBLETest.cpp; sourceTree = "<group>"; };
+		9D7D42EA1C27C83A008F76E5 /* WheelFirmwareMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WheelFirmwareMain.cpp; sourceTree = "<group>"; };
 		9D7D43001C291213008F76E5 /* Arduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arduino.h; sourceTree = "<group>"; };
 		9D7D43021C291213008F76E5 /* pgmspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pgmspace.h; sourceTree = "<group>"; };
 		9D7D43051C291213008F76E5 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
@@ -998,6 +1000,12 @@
 		9D7D44A11C291214008F76E5 /* WStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WStream.h; sourceTree = "<group>"; };
 		9D7D44A21C291214008F76E5 /* WString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WString.cpp; sourceTree = "<group>"; };
 		9D7D44A31C291214008F76E5 /* WString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WString.h; sourceTree = "<group>"; };
+		9D7D45111C2A3319008F76E5 /* BluetoothManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BluetoothManager.cpp; sourceTree = "<group>"; };
+		9D7D45121C2A3319008F76E5 /* BluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothManager.h; sourceTree = "<group>"; };
+		9D7D45141C2A389D008F76E5 /* CDWheelBluetoothShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDWheelBluetoothShared.h; sourceTree = "<group>"; };
+		9D7D45151C2A48A8008F76E5 /* WheelService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WheelService.cpp; sourceTree = "<group>"; };
+		9D7D45161C2A48A8008F76E5 /* WheelService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelService.h; sourceTree = "<group>"; };
+		9D7D45181C2B879B008F76E5 /* SharedSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedSettings.h; sourceTree = "<group>"; };
 		AAAA151220212328AA000005 /* abi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = abi.cpp; sourceTree = "<group>"; };
 		AAAA151220212328AA000006 /* Arduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arduino.h; sourceTree = "<group>"; };
 		AAAA151220212328AA000007 /* binary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binary.h; sourceTree = "<group>"; };
@@ -1402,7 +1410,7 @@
 		9D7D424A1C27C120008F76E5 = {
 			isa = PBXGroup;
 			children = (
-				9D7D42581C27C120008F76E5 /* ArudinoBLETest */,
+				9D7D42581C27C120008F76E5 /* WheelBLEFirmware */,
 				9D7D42571C27C120008F76E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1415,13 +1423,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9D7D42581C27C120008F76E5 /* ArudinoBLETest */ = {
+		9D7D42581C27C120008F76E5 /* WheelBLEFirmware */ = {
 			isa = PBXGroup;
 			children = (
 				9D7D42591C27C120008F76E5 /* main.cpp */,
 				9D7D425B1C27C120008F76E5 /* Makefile */,
 				9D7D425D1C27C120008F76E5 /* ReadMe.txt */,
-				9D7D42EA1C27C83A008F76E5 /* ArduinoBLETest.cpp */,
+				9D7D45181C2B879B008F76E5 /* SharedSettings.h */,
+				9D7D42EA1C27C83A008F76E5 /* WheelFirmwareMain.cpp */,
+				9D7D45141C2A389D008F76E5 /* CDWheelBluetoothShared.h */,
+				9D7D45121C2A3319008F76E5 /* BluetoothManager.h */,
+				9D7D45111C2A3319008F76E5 /* BluetoothManager.cpp */,
+				9D7D45161C2A48A8008F76E5 /* WheelService.h */,
+				9D7D45151C2A48A8008F76E5 /* WheelService.cpp */,
 				9D7D42FF1C291213008F76E5 /* RBL_nRF51822 */,
 				9D7D425E1C27C120008F76E5 /* Sketchbook */,
 				AAAA151220212328AA000000 /* Resources */,
@@ -1429,7 +1443,7 @@
 				9D7D42AB1C27C120008F76E5 /* Makefiles */,
 				9D7D42CD1C27C120008F76E5 /* Utilities */,
 			);
-			path = ArudinoBLETest;
+			path = WheelBLEFirmware;
 			sourceTree = "<group>";
 		};
 		9D7D425E1C27C120008F76E5 /* Sketchbook */ = {
@@ -2803,7 +2817,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9D7D424E1C27C120008F76E5 /* Build configuration list for PBXProject "ArudinoBLETest" */;
+			buildConfigurationList = 9D7D424E1C27C120008F76E5 /* Build configuration list for PBXProject "WheelBLEFirmware" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -2941,6 +2955,7 @@
 				AA2A151220212328AA00006F /* Esplora.cpp in Sources */,
 				AA2A151220212328AA000070 /* Esplora.h in Sources */,
 				AA2A151220212328AA000073 /* Dhcp.cpp in Sources */,
+				9D7D45131C2A3319008F76E5 /* BluetoothManager.cpp in Sources */,
 				AA2A151220212328AA000074 /* Dhcp.h in Sources */,
 				AA2A151220212328AA000075 /* Dns.cpp in Sources */,
 				AA2A151220212328AA000076 /* Dns.h in Sources */,
@@ -3244,7 +3259,7 @@
 				AA2A151220212328AA00017F /* TembooSession.h in Sources */,
 				9D7D44DE1C291214008F76E5 /* spi_api.c in Sources */,
 				AA2A151220212328AA000180 /* TembooTags.h in Sources */,
-				9D7D42EB1C27C83A008F76E5 /* ArduinoBLETest.cpp in Sources */,
+				9D7D42EB1C27C83A008F76E5 /* WheelFirmwareMain.cpp in Sources */,
 				AA2A151220212328AA000181 /* TembooTimer.h in Sources */,
 				AA2A151220212328AA000182 /* tmbhmac.cpp in Sources */,
 				AA2A151220212328AA000183 /* tmbhmac.h in Sources */,
@@ -3334,6 +3349,7 @@
 				9D7D44C31C291214008F76E5 /* RawSerial.cpp in Sources */,
 				AA2A151220212328AA0001F5 /* startup.c in Sources */,
 				AA2A151220212328AA0001F6 /* startup.h in Sources */,
+				9D7D45171C2A48A8008F76E5 /* WheelService.cpp in Sources */,
 				AA2A151220212328AA0001F7 /* wl_fw.h in Sources */,
 				AA2A151220212328AA0001F8 /* wifi_dnld.cproj in Sources */,
 				AA2A151220212328AA0001FA /* .cproject in Sources */,
@@ -3521,7 +3537,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D7D424E1C27C120008F76E5 /* Build configuration list for PBXProject "ArudinoBLETest" */ = {
+		9D7D424E1C27C120008F76E5 /* Build configuration list for PBXProject "WheelBLEFirmware" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D7D42D61C27C120008F76E5 /* Debug */,
