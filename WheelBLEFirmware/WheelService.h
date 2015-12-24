@@ -17,7 +17,7 @@
 
 class WheelUARTService : public UARTService {
 public:
-    WheelUARTService(BLE &ble) : UARTService(ble) { }
+    WheelUARTService(BLE &ble) : UARTService(ble) { m_dataLeft = 0; }
     int available() {
         if (numBytesReceived > 0) {
             return numBytesReceived - receiveBufferIndex;
@@ -27,6 +27,9 @@ public:
     }
 protected:
     virtual void handleDataWritten() override;
+private:
+    int m_dataLeft; // TODO: maybe a reset method in case we disconnect..
+
 };
 
 

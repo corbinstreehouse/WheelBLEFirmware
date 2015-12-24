@@ -10,12 +10,40 @@
 #include "CDWheelBluetoothShared.h"
 #include "SharedSettings.h"
 
+uint32_t start;
+int count = 0;
+
 void WheelUARTService::handleDataWritten() {
     
-//    DEBUG_PRINTLN("     WheelUARTService..for TX char");
+    if (m_dataLeft <= 0) {
+        DEBUG_PRINTLN("Starting to get data...");
+        // start over!
+        // read the size
+        int32_t totalBytes = 0;
+        // TODO: better checking
+        char c1 = _getc();
+        char c2 = _getc();
+        char c3 = _getc();
+        char c4 = _getc();
+        // reassemble... TOOD: make a method to read an int32
+        totalBytes = c1 | (c2 << 8) | (c3 << 16) | (c4 << 24);
+        DEBUG_PRINTF("bytes: %x, %x, %x, %x\r\n", c1, c2, c3, c4);;
+        DEBUG_PRINTF("total bytes: %d\r\n", totalBytes);
+        m_dataLeft = totalBytes;
+        start = millis();
+        count = 0;
+    }
+
     while (available()) {
         char c = _getc();
-        Serial.print(c);
+//        Serial.print(c);
+        m_dataLeft--;
+        count++;
+    }
+    if (m_dataLeft == 0) {
+        // Done
+        uint32_t time = millis() - start;
+        DEBUG_PRINTF("  read %d, time took: %d ms, %g s\r\n", count, time, time /1000.0 );
     }
 }
 
@@ -26,4 +54,5 @@ const uint8_t WheelService::UUID_CHAR_SEND_COMMAND[UUID::LENGTH_OF_LONG_UUID] = 
 
 void WheelService::onDataWritten(const GattWriteCallbackParams *params) {
 //    DEBUG_PRINTLN("XX WheelService:OndataWritten");
+    
 }
