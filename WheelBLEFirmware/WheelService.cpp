@@ -47,8 +47,9 @@ void WheelUARTService::handleDataWritten() {
     }
 }
 
-const uint8_t WheelService::UUID_WHEEL_SERVICE[UUID::LENGTH_OF_LONG_UUID] = kLEDWheelServiceUUID_BYTE_ARRAY;
-const uint8_t WheelService::UUID_CHAR_SEND_COMMAND[UUID::LENGTH_OF_LONG_UUID] = kLEDWheelCharSendCommandUUID_BYTE_ARRAY;
+const uint8_t WheelService::UUID_WHEEL_SERVICE[UUID::LENGTH_OF_LONG_UUID] = kLEDWheelServiceUUID_BYTES;
+const uint8_t WheelService::UUID_CHAR_SEND_COMMAND[UUID::LENGTH_OF_LONG_UUID] = kLEDWheelCharSendCommandUUID_BYTES;
+const uint8_t WheelService::UUID_WHEEL_SERVICE_REVERSED[UUID::LENGTH_OF_LONG_UUID] = kLEDWheelServiceUUID_BYTES_REVERSED;
 
 
 

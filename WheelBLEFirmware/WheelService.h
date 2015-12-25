@@ -36,6 +36,8 @@ private:
 class WheelService {
 public:
     static const uint8_t UUID_WHEEL_SERVICE[UUID::LENGTH_OF_LONG_UUID];
+    static const uint8_t UUID_WHEEL_SERVICE_REVERSED[UUID::LENGTH_OF_LONG_UUID];
+    
     static const uint8_t UUID_CHAR_SEND_COMMAND[UUID::LENGTH_OF_LONG_UUID];
 public:
     WheelService(BLE &ble) :

@@ -7,6 +7,261 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D75153A1C2CC2970024EE87 /* SharedSettings.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D45181C2B879B008F76E5 /* SharedSettings.h */; };
+		9D75153B1C2CC2970024EE87 /* CDWheelBluetoothShared.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D45141C2A389D008F76E5 /* CDWheelBluetoothShared.h */; };
+		9D75153C1C2CC2970024EE87 /* BluetoothManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D45121C2A3319008F76E5 /* BluetoothManager.h */; };
+		9D75153D1C2CC2970024EE87 /* WheelService.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D45161C2A48A8008F76E5 /* WheelService.h */; };
+		9D75153E1C2CC2970024EE87 /* Arduino.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43001C291213008F76E5 /* Arduino.h */; };
+		9D75153F1C2CC2970024EE87 /* pgmspace.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43021C291213008F76E5 /* pgmspace.h */; };
+		9D7515401C2CC2970024EE87 /* BLE.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43051C291213008F76E5 /* BLE.h */; };
+		9D7515411C2CC2970024EE87 /* blecommon.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43061C291213008F76E5 /* blecommon.h */; };
+		9D7515421C2CC2970024EE87 /* BLEInstanceBase.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43071C291213008F76E5 /* BLEInstanceBase.h */; };
+		9D7515431C2CC2970024EE87 /* CallChainOfFunctionPointersWithContext.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43081C291213008F76E5 /* CallChainOfFunctionPointersWithContext.h */; };
+		9D7515441C2CC2970024EE87 /* DiscoveredCharacteristic.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43091C291213008F76E5 /* DiscoveredCharacteristic.h */; };
+		9D7515451C2CC2970024EE87 /* DiscoveredService.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D430A1C291213008F76E5 /* DiscoveredService.h */; };
+		9D7515461C2CC2970024EE87 /* FunctionPointerWithContext.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D430B1C291213008F76E5 /* FunctionPointerWithContext.h */; };
+		9D7515471C2CC2970024EE87 /* Gap.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D430C1C291213008F76E5 /* Gap.h */; };
+		9D7515481C2CC2970024EE87 /* GapAdvertisingData.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D430D1C291213008F76E5 /* GapAdvertisingData.h */; };
+		9D7515491C2CC2970024EE87 /* GapAdvertisingParams.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D430E1C291213008F76E5 /* GapAdvertisingParams.h */; };
+		9D75154A1C2CC2970024EE87 /* GapEvents.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D430F1C291213008F76E5 /* GapEvents.h */; };
+		9D75154B1C2CC2970024EE87 /* GapScanningParams.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43101C291213008F76E5 /* GapScanningParams.h */; };
+		9D75154C1C2CC2970024EE87 /* GattAttribute.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43111C291213008F76E5 /* GattAttribute.h */; };
+		9D75154D1C2CC2970024EE87 /* GattCallbackParamTypes.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43121C291213008F76E5 /* GattCallbackParamTypes.h */; };
+		9D75154E1C2CC2970024EE87 /* GattCharacteristic.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43131C291213008F76E5 /* GattCharacteristic.h */; };
+		9D75154F1C2CC2970024EE87 /* GattClient.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43141C291213008F76E5 /* GattClient.h */; };
+		9D7515501C2CC2970024EE87 /* GattServer.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43151C291213008F76E5 /* GattServer.h */; };
+		9D7515511C2CC2970024EE87 /* GattServerEvents.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43161C291213008F76E5 /* GattServerEvents.h */; };
+		9D7515521C2CC2970024EE87 /* GattService.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43171C291213008F76E5 /* GattService.h */; };
+		9D7515531C2CC2970024EE87 /* SecurityManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43181C291213008F76E5 /* SecurityManager.h */; };
+		9D7515541C2CC2970024EE87 /* ServiceDiscovery.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43191C291213008F76E5 /* ServiceDiscovery.h */; };
+		9D7515551C2CC2970024EE87 /* BatteryService.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D431B1C291213008F76E5 /* BatteryService.h */; };
+		9D7515561C2CC2970024EE87 /* DeviceInformationService.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D431C1C291213008F76E5 /* DeviceInformationService.h */; };
+		9D7515571C2CC2970024EE87 /* DFUService.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D431D1C291213008F76E5 /* DFUService.h */; };
+		9D7515581C2CC2970024EE87 /* HealthThermometerService.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D431E1C291213008F76E5 /* HealthThermometerService.h */; };
+		9D7515591C2CC2970024EE87 /* HeartRateService.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D431F1C291213008F76E5 /* HeartRateService.h */; };
+		9D75155A1C2CC2970024EE87 /* iBeaconService.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43201C291213008F76E5 /* iBeaconService.h */; };
+		9D75155B1C2CC2970024EE87 /* LinkLossService.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43211C291213008F76E5 /* LinkLossService.h */; };
+		9D75155C1C2CC2970024EE87 /* UARTService.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43221C291213008F76E5 /* UARTService.h */; };
+		9D75155D1C2CC2970024EE87 /* URIBeaconConfigService.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43231C291213008F76E5 /* URIBeaconConfigService.h */; };
+		9D75155E1C2CC2970024EE87 /* UUID.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43241C291213008F76E5 /* UUID.h */; };
+		9D75155F1C2CC2970024EE87 /* module.json in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43251C291213008F76E5 /* module.json */; };
+		9D7515601C2CC2970024EE87 /* BLE_API.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D432F1C291213008F76E5 /* BLE_API.h */; };
+		9D7515611C2CC2970024EE87 /* HardwareSerial.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43301C291213008F76E5 /* HardwareSerial.h */; };
+		9D7515621C2CC2970024EE87 /* itoa.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43321C291213008F76E5 /* itoa.h */; };
+		9D7515631C2CC2970024EE87 /* AnalogIn.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43361C291213008F76E5 /* AnalogIn.h */; };
+		9D7515641C2CC2970024EE87 /* AnalogOut.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43371C291213008F76E5 /* AnalogOut.h */; };
+		9D7515651C2CC2970024EE87 /* BusIn.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43381C291213008F76E5 /* BusIn.h */; };
+		9D7515661C2CC2970024EE87 /* BusInOut.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43391C291213008F76E5 /* BusInOut.h */; };
+		9D7515671C2CC2970024EE87 /* BusOut.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D433A1C291213008F76E5 /* BusOut.h */; };
+		9D7515681C2CC2970024EE87 /* CallChain.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D433B1C291213008F76E5 /* CallChain.h */; };
+		9D7515691C2CC2970024EE87 /* CAN.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D433C1C291213008F76E5 /* CAN.h */; };
+		9D75156A1C2CC2970024EE87 /* can_helper.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D433D1C291213008F76E5 /* can_helper.h */; };
+		9D75156B1C2CC2970024EE87 /* CircularBuffer.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D433E1C291213008F76E5 /* CircularBuffer.h */; };
+		9D75156C1C2CC2970024EE87 /* CThunk.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D433F1C291213008F76E5 /* CThunk.h */; };
+		9D75156D1C2CC2970024EE87 /* DigitalIn.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43401C291213008F76E5 /* DigitalIn.h */; };
+		9D75156E1C2CC2970024EE87 /* DigitalInOut.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43411C291213008F76E5 /* DigitalInOut.h */; };
+		9D75156F1C2CC2970024EE87 /* DigitalOut.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43421C291213008F76E5 /* DigitalOut.h */; };
+		9D7515701C2CC2970024EE87 /* DirHandle.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43431C291213008F76E5 /* DirHandle.h */; };
+		9D7515711C2CC2970024EE87 /* Ethernet.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43441C291213008F76E5 /* Ethernet.h */; };
+		9D7515721C2CC2970024EE87 /* FileBase.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43451C291213008F76E5 /* FileBase.h */; };
+		9D7515731C2CC2970024EE87 /* FileHandle.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43461C291213008F76E5 /* FileHandle.h */; };
+		9D7515741C2CC2970024EE87 /* FileLike.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43471C291213008F76E5 /* FileLike.h */; };
+		9D7515751C2CC2970024EE87 /* FilePath.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43481C291213008F76E5 /* FilePath.h */; };
+		9D7515761C2CC2970024EE87 /* FileSystemLike.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43491C291213008F76E5 /* FileSystemLike.h */; };
+		9D7515771C2CC2970024EE87 /* FunctionPointer.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D434A1C291213008F76E5 /* FunctionPointer.h */; };
+		9D7515781C2CC2970024EE87 /* I2C.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D434B1C291213008F76E5 /* I2C.h */; };
+		9D7515791C2CC2970024EE87 /* I2CSlave.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D434C1C291213008F76E5 /* I2CSlave.h */; };
+		9D75157A1C2CC2970024EE87 /* InterruptIn.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D434D1C291213008F76E5 /* InterruptIn.h */; };
+		9D75157B1C2CC2970024EE87 /* InterruptManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D434E1C291213008F76E5 /* InterruptManager.h */; };
+		9D75157C1C2CC2970024EE87 /* LocalFileSystem.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D434F1C291213008F76E5 /* LocalFileSystem.h */; };
+		9D75157D1C2CC2970024EE87 /* LowPowerTicker.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43501C291213008F76E5 /* LowPowerTicker.h */; };
+		9D75157E1C2CC2970024EE87 /* LowPowerTimeout.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43511C291213008F76E5 /* LowPowerTimeout.h */; };
+		9D75157F1C2CC2970024EE87 /* LowPowerTimer.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43521C291213008F76E5 /* LowPowerTimer.h */; };
+		9D7515801C2CC2970024EE87 /* mbed.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43531C291213008F76E5 /* mbed.h */; };
+		9D7515811C2CC2980024EE87 /* mbed_assert.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43541C291213008F76E5 /* mbed_assert.h */; };
+		9D7515821C2CC2980024EE87 /* mbed_debug.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43551C291213008F76E5 /* mbed_debug.h */; };
+		9D7515831C2CC2980024EE87 /* mbed_error.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43561C291213008F76E5 /* mbed_error.h */; };
+		9D7515841C2CC2980024EE87 /* mbed_interface.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43571C291213008F76E5 /* mbed_interface.h */; };
+		9D7515851C2CC2980024EE87 /* platform.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43581C291213008F76E5 /* platform.h */; };
+		9D7515861C2CC2980024EE87 /* PortIn.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43591C291213008F76E5 /* PortIn.h */; };
+		9D7515871C2CC2980024EE87 /* PortInOut.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D435A1C291213008F76E5 /* PortInOut.h */; };
+		9D7515881C2CC2980024EE87 /* PortOut.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D435B1C291213008F76E5 /* PortOut.h */; };
+		9D7515891C2CC2980024EE87 /* PwmOut.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D435C1C291213008F76E5 /* PwmOut.h */; };
+		9D75158A1C2CC2980024EE87 /* RawSerial.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D435D1C291213008F76E5 /* RawSerial.h */; };
+		9D75158B1C2CC2980024EE87 /* rtc_time.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D435E1C291213008F76E5 /* rtc_time.h */; };
+		9D75158C1C2CC2980024EE87 /* semihost_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D435F1C291213008F76E5 /* semihost_api.h */; };
+		9D75158D1C2CC2980024EE87 /* Serial.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43601C291213008F76E5 /* Serial.h */; };
+		9D75158E1C2CC2980024EE87 /* SerialBase.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43611C291213008F76E5 /* SerialBase.h */; };
+		9D75158F1C2CC2980024EE87 /* SPI.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43621C291213008F76E5 /* SPI.h */; };
+		9D7515901C2CC2980024EE87 /* SPISlave.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43631C291213008F76E5 /* SPISlave.h */; };
+		9D7515911C2CC2980024EE87 /* Stream.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43641C291213008F76E5 /* Stream.h */; };
+		9D7515921C2CC2980024EE87 /* Ticker.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43651C291213008F76E5 /* Ticker.h */; };
+		9D7515931C2CC2980024EE87 /* Timeout.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43661C291213008F76E5 /* Timeout.h */; };
+		9D7515941C2CC2980024EE87 /* Timer.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43671C291213008F76E5 /* Timer.h */; };
+		9D7515951C2CC2980024EE87 /* TimerEvent.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43681C291213008F76E5 /* TimerEvent.h */; };
+		9D7515961C2CC2980024EE87 /* toolchain.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43691C291213008F76E5 /* toolchain.h */; };
+		9D7515971C2CC2980024EE87 /* Transaction.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D436A1C291213008F76E5 /* Transaction.h */; };
+		9D7515981C2CC2980024EE87 /* wait_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D436B1C291213008F76E5 /* wait_api.h */; };
+		9D7515991C2CC2980024EE87 /* CMakeLists.txt in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D436C1C291213008F76E5 /* CMakeLists.txt */; };
+		9D75159A1C2CC2980024EE87 /* analogin_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43951C291213008F76E5 /* analogin_api.h */; };
+		9D75159B1C2CC2980024EE87 /* analogout_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43961C291213008F76E5 /* analogout_api.h */; };
+		9D75159C1C2CC2980024EE87 /* buffer.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43971C291214008F76E5 /* buffer.h */; };
+		9D75159D1C2CC2980024EE87 /* can_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43981C291214008F76E5 /* can_api.h */; };
+		9D75159E1C2CC2980024EE87 /* dma_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43991C291214008F76E5 /* dma_api.h */; };
+		9D75159F1C2CC2980024EE87 /* ethernet_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D439A1C291214008F76E5 /* ethernet_api.h */; };
+		9D7515A01C2CC2980024EE87 /* gpio_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D439B1C291214008F76E5 /* gpio_api.h */; };
+		9D7515A11C2CC2980024EE87 /* gpio_irq_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D439C1C291214008F76E5 /* gpio_irq_api.h */; };
+		9D7515A21C2CC2980024EE87 /* i2c_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D439D1C291214008F76E5 /* i2c_api.h */; };
+		9D7515A31C2CC2980024EE87 /* lp_ticker_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D439E1C291214008F76E5 /* lp_ticker_api.h */; };
+		9D7515A41C2CC2980024EE87 /* pinmap.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D439F1C291214008F76E5 /* pinmap.h */; };
+		9D7515A51C2CC2980024EE87 /* port_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43A01C291214008F76E5 /* port_api.h */; };
+		9D7515A61C2CC2980024EE87 /* pwmout_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43A11C291214008F76E5 /* pwmout_api.h */; };
+		9D7515A71C2CC2980024EE87 /* rtc_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43A21C291214008F76E5 /* rtc_api.h */; };
+		9D7515A81C2CC2980024EE87 /* serial_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43A31C291214008F76E5 /* serial_api.h */; };
+		9D7515A91C2CC2980024EE87 /* sleep_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43A41C291214008F76E5 /* sleep_api.h */; };
+		9D7515AA1C2CC2980024EE87 /* spi_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43A51C291214008F76E5 /* spi_api.h */; };
+		9D7515AB1C2CC2980024EE87 /* ticker_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43A61C291214008F76E5 /* ticker_api.h */; };
+		9D7515AC1C2CC2980024EE87 /* us_ticker_api.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43A71C291214008F76E5 /* us_ticker_api.h */; };
+		9D7515AD1C2CC2980024EE87 /* module.json in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43A81C291214008F76E5 /* module.json */; };
+		9D7515AE1C2CC2980024EE87 /* core_ca9.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43AB1C291214008F76E5 /* core_ca9.h */; };
+		9D7515AF1C2CC2980024EE87 /* core_ca_mmu.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43AC1C291214008F76E5 /* core_ca_mmu.h */; };
+		9D7515B01C2CC2980024EE87 /* core_caFunc.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43AD1C291214008F76E5 /* core_caFunc.h */; };
+		9D7515B11C2CC2980024EE87 /* core_caInstr.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43AE1C291214008F76E5 /* core_caInstr.h */; };
+		9D7515B21C2CC2980024EE87 /* core_cm0.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43AF1C291214008F76E5 /* core_cm0.h */; };
+		9D7515B31C2CC2980024EE87 /* core_cm0plus.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43B01C291214008F76E5 /* core_cm0plus.h */; };
+		9D7515B41C2CC2980024EE87 /* core_cm3.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43B11C291214008F76E5 /* core_cm3.h */; };
+		9D7515B51C2CC2980024EE87 /* core_cm4.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43B21C291214008F76E5 /* core_cm4.h */; };
+		9D7515B61C2CC2980024EE87 /* core_cm4_simd.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43B31C291214008F76E5 /* core_cm4_simd.h */; };
+		9D7515B71C2CC2980024EE87 /* core_cm7.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43B41C291214008F76E5 /* core_cm7.h */; };
+		9D7515B81C2CC2980024EE87 /* core_cmFunc.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43B51C291214008F76E5 /* core_cmFunc.h */; };
+		9D7515B91C2CC2980024EE87 /* core_cmInstr.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43B61C291214008F76E5 /* core_cmInstr.h */; };
+		9D7515BA1C2CC2980024EE87 /* core_cmSimd.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43B71C291214008F76E5 /* core_cmSimd.h */; };
+		9D7515BB1C2CC2980024EE87 /* cmsis.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43BA1C291214008F76E5 /* cmsis.h */; };
+		9D7515BC1C2CC2980024EE87 /* cmsis_nvic.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43BC1C291214008F76E5 /* cmsis_nvic.h */; };
+		9D7515BD1C2CC2980024EE87 /* compiler_abstraction.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43BD1C291214008F76E5 /* compiler_abstraction.h */; };
+		9D7515BE1C2CC2980024EE87 /* nrf.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43BE1C291214008F76E5 /* nrf.h */; };
+		9D7515BF1C2CC2980024EE87 /* nrf51.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43BF1C291214008F76E5 /* nrf51.h */; };
+		9D7515C01C2CC2980024EE87 /* nrf51_bitfields.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43C01C291214008F76E5 /* nrf51_bitfields.h */; };
+		9D7515C11C2CC2980024EE87 /* nrf_delay.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43C11C291214008F76E5 /* nrf_delay.h */; };
+		9D7515C21C2CC2980024EE87 /* system_nrf51.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43C31C291214008F76E5 /* system_nrf51.h */; };
+		9D7515C31C2CC2980024EE87 /* gpio_object.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43CA1C291214008F76E5 /* gpio_object.h */; };
+		9D7515C41C2CC2980024EE87 /* crc16.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43D11C291214008F76E5 /* crc16.h */; };
+		9D7515C51C2CC2980024EE87 /* app_scheduler.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43D31C291214008F76E5 /* app_scheduler.h */; };
+		9D7515C61C2CC2980024EE87 /* app_error.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43D51C291214008F76E5 /* app_error.h */; };
+		9D7515C71C2CC2980024EE87 /* app_util.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43D61C291214008F76E5 /* app_util.h */; };
+		9D7515C81C2CC2980024EE87 /* nrf51822_bootloader.hex in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43D71C291214008F76E5 /* nrf51822_bootloader.hex */; };
+		9D7515C91C2CC2980024EE87 /* s130_nrf51_1.0.0_licence_agreement.txt in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43D91C291214008F76E5 /* s130_nrf51_1.0.0_licence_agreement.txt */; };
+		9D7515CA1C2CC2980024EE87 /* s130_nrf51_1.0.0_softdevice.hex in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43DA1C291214008F76E5 /* s130_nrf51_1.0.0_softdevice.hex */; };
+		9D7515CB1C2CC2980024EE87 /* objects.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43DB1C291214008F76E5 /* objects.h */; };
+		9D7515CC1C2CC2980024EE87 /* PeripheralNames.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43DC1C291214008F76E5 /* PeripheralNames.h */; };
+		9D7515CD1C2CC2980024EE87 /* PortNames.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43DF1C291214008F76E5 /* PortNames.h */; };
+		9D7515CE1C2CC2980024EE87 /* device.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43E51C291214008F76E5 /* device.h */; };
+		9D7515CF1C2CC2980024EE87 /* PinNames.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43E61C291214008F76E5 /* PinNames.h */; };
+		9D7515D01C2CC2980024EE87 /* device.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43E81C291214008F76E5 /* device.h */; };
+		9D7515D11C2CC2980024EE87 /* PinNames.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43E91C291214008F76E5 /* PinNames.h */; };
+		9D7515D21C2CC2980024EE87 /* module.json in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43EC1C291214008F76E5 /* module.json */; };
+		9D7515D31C2CC2980024EE87 /* btle.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43F01C291214008F76E5 /* btle.h */; };
+		9D7515D41C2CC2980024EE87 /* btle_advertising.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43F21C291214008F76E5 /* btle_advertising.h */; };
+		9D7515D51C2CC2980024EE87 /* btle_discovery.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43F41C291214008F76E5 /* btle_discovery.h */; };
+		9D7515D61C2CC2980024EE87 /* btle_gap.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43F61C291214008F76E5 /* btle_gap.h */; };
+		9D7515D71C2CC2980024EE87 /* btle_security.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43F81C291214008F76E5 /* btle_security.h */; };
+		9D7515D81C2CC2980024EE87 /* custom_helper.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43FB1C291214008F76E5 /* custom_helper.h */; };
+		9D7515D91C2CC2980024EE87 /* ansi_escape.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43FD1C291214008F76E5 /* ansi_escape.h */; };
+		9D7515DA1C2CC2980024EE87 /* assertion.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43FE1C291214008F76E5 /* assertion.h */; };
+		9D7515DB1C2CC2980024EE87 /* binary.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43FF1C291214008F76E5 /* binary.h */; };
+		9D7515DC1C2CC2980024EE87 /* ble_error.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44001C291214008F76E5 /* ble_error.h */; };
+		9D7515DD1C2CC2980024EE87 /* common.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44011C291214008F76E5 /* common.h */; };
+		9D7515DE1C2CC2980024EE87 /* compiler.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44021C291214008F76E5 /* compiler.h */; };
+		9D7515DF1C2CC2980024EE87 /* ble_radio_notification.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44081C291214008F76E5 /* ble_radio_notification.h */; };
+		9D7515E01C2CC2980024EE87 /* ble_dfu.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D440C1C291214008F76E5 /* ble_dfu.h */; };
+		9D7515E11C2CC2980024EE87 /* ble_advdata.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D440F1C291214008F76E5 /* ble_advdata.h */; };
+		9D7515E21C2CC2980024EE87 /* ble_advdata_parser.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44111C291214008F76E5 /* ble_advdata_parser.h */; };
+		9D7515E31C2CC2980024EE87 /* ble_conn_params.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44131C291214008F76E5 /* ble_conn_params.h */; };
+		9D7515E41C2CC2980024EE87 /* ble_date_time.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44141C291214008F76E5 /* ble_date_time.h */; };
+		9D7515E51C2CC2980024EE87 /* ble_sensor_location.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44151C291214008F76E5 /* ble_sensor_location.h */; };
+		9D7515E61C2CC2980024EE87 /* ble_srv_common.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44171C291214008F76E5 /* ble_srv_common.h */; };
+		9D7515E71C2CC2980024EE87 /* device_manager_cnfg.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D441A1C291214008F76E5 /* device_manager_cnfg.h */; };
+		9D7515E81C2CC2980024EE87 /* device_manager.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D441B1C291214008F76E5 /* device_manager.h */; };
+		9D7515E91C2CC2980024EE87 /* ble_flash.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44201C291214008F76E5 /* ble_flash.h */; };
+		9D7515EA1C2CC2980024EE87 /* compiler_abstraction.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44221C291214008F76E5 /* compiler_abstraction.h */; };
+		9D7515EB1C2CC2980024EE87 /* nrf.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44231C291214008F76E5 /* nrf.h */; };
+		9D7515EC1C2CC2980024EE87 /* nrf51.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44241C291214008F76E5 /* nrf51.h */; };
+		9D7515ED1C2CC2980024EE87 /* nrf51_bitfields.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44251C291214008F76E5 /* nrf51_bitfields.h */; };
+		9D7515EE1C2CC2980024EE87 /* nrf51_deprecated.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44261C291214008F76E5 /* nrf51_deprecated.h */; };
+		9D7515EF1C2CC2980024EE87 /* nrf_ecb.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44291C291214008F76E5 /* nrf_ecb.h */; };
+		9D7515F01C2CC2980024EE87 /* nrf_gpio.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D442A1C291214008F76E5 /* nrf_gpio.h */; };
+		9D7515F11C2CC2980024EE87 /* nrf_gpiote.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D442B1C291214008F76E5 /* nrf_gpiote.h */; };
+		9D7515F21C2CC2980024EE87 /* nrf_nvmc.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D442D1C291214008F76E5 /* nrf_nvmc.h */; };
+		9D7515F31C2CC2980024EE87 /* nrf_temp.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D442E1C291214008F76E5 /* nrf_temp.h */; };
+		9D7515F41C2CC2980024EE87 /* pstorage_platform.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44311C291214008F76E5 /* pstorage_platform.h */; };
+		9D7515F51C2CC2980024EE87 /* pstorage.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44331C291214008F76E5 /* pstorage.h */; };
+		9D7515F61C2CC2980024EE87 /* bootloader.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44361C291214008F76E5 /* bootloader.h */; };
+		9D7515F71C2CC2980024EE87 /* bootloader_types.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44371C291214008F76E5 /* bootloader_types.h */; };
+		9D7515F81C2CC2980024EE87 /* bootloader_util.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44381C291214008F76E5 /* bootloader_util.h */; };
+		9D7515F91C2CC2980024EE87 /* dfu.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D443A1C291214008F76E5 /* dfu.h */; };
+		9D7515FA1C2CC2980024EE87 /* dfu_bank_internal.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D443B1C291214008F76E5 /* dfu_bank_internal.h */; };
+		9D7515FB1C2CC2980024EE87 /* dfu_ble_svc.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D443C1C291214008F76E5 /* dfu_ble_svc.h */; };
+		9D7515FC1C2CC2980024EE87 /* dfu_ble_svc_internal.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D443D1C291214008F76E5 /* dfu_ble_svc_internal.h */; };
+		9D7515FD1C2CC2980024EE87 /* dfu_init.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D443E1C291214008F76E5 /* dfu_init.h */; };
+		9D7515FE1C2CC2980024EE87 /* dfu_transport.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44401C291214008F76E5 /* dfu_transport.h */; };
+		9D7515FF1C2CC2980024EE87 /* dfu_types.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44411C291214008F76E5 /* dfu_types.h */; };
+		9D7516001C2CC2980024EE87 /* dfu_app_handler.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44441C291214008F76E5 /* dfu_app_handler.h */; };
+		9D7516011C2CC2980024EE87 /* hci_mem_pool_internal.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44461C291214008F76E5 /* hci_mem_pool_internal.h */; };
+		9D7516021C2CC2980024EE87 /* hci_mem_pool.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D444B1C291214008F76E5 /* hci_mem_pool.h */; };
+		9D7516031C2CC2980024EE87 /* app_util_platform.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44511C291214008F76E5 /* app_util_platform.h */; };
+		9D7516041C2CC2980024EE87 /* common.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44521C291214008F76E5 /* common.h */; };
+		9D7516051C2CC2980024EE87 /* nordic_common.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44531C291214008F76E5 /* nordic_common.h */; };
+		9D7516061C2CC2980024EE87 /* nrf_assert.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44551C291214008F76E5 /* nrf_assert.h */; };
+		9D7516071C2CC2980024EE87 /* sdk_common.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44561C291214008F76E5 /* sdk_common.h */; };
+		9D7516081C2CC2980024EE87 /* sdk_errors.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44571C291214008F76E5 /* sdk_errors.h */; };
+		9D7516091C2CC2980024EE87 /* sdk_os.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44581C291214008F76E5 /* sdk_os.h */; };
+		9D75160A1C2CC2980024EE87 /* ant_stack_handler_types.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D445C1C291214008F76E5 /* ant_stack_handler_types.h */; };
+		9D75160B1C2CC2980024EE87 /* ble_stack_handler_types.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D445D1C291214008F76E5 /* ble_stack_handler_types.h */; };
+		9D75160C1C2CC2980024EE87 /* softdevice_handler.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D445F1C291214008F76E5 /* softdevice_handler.h */; };
+		9D75160D1C2CC2980024EE87 /* softdevice_handler_appsh.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44611C291214008F76E5 /* softdevice_handler_appsh.h */; };
+		9D75160E1C2CC2980024EE87 /* ble_api.dox in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44641C291214008F76E5 /* ble_api.dox */; };
+		9D75160F1C2CC2980024EE87 /* ble.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44661C291214008F76E5 /* ble.h */; };
+		9D7516101C2CC2980024EE87 /* ble_err.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44671C291214008F76E5 /* ble_err.h */; };
+		9D7516111C2CC2980024EE87 /* ble_gap.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44681C291214008F76E5 /* ble_gap.h */; };
+		9D7516121C2CC2980024EE87 /* ble_gatt.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44691C291214008F76E5 /* ble_gatt.h */; };
+		9D7516131C2CC2980024EE87 /* ble_gattc.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D446A1C291214008F76E5 /* ble_gattc.h */; };
+		9D7516141C2CC2980024EE87 /* ble_gatts.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D446B1C291214008F76E5 /* ble_gatts.h */; };
+		9D7516151C2CC2980024EE87 /* ble_hci.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D446C1C291214008F76E5 /* ble_hci.h */; };
+		9D7516161C2CC2980024EE87 /* ble_l2cap.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D446D1C291214008F76E5 /* ble_l2cap.h */; };
+		9D7516171C2CC2980024EE87 /* ble_ranges.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D446E1C291214008F76E5 /* ble_ranges.h */; };
+		9D7516181C2CC2980024EE87 /* ble_types.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D446F1C291214008F76E5 /* ble_types.h */; };
+		9D7516191C2CC2980024EE87 /* nrf_error.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44701C291214008F76E5 /* nrf_error.h */; };
+		9D75161A1C2CC2980024EE87 /* nrf_error_sdm.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44711C291214008F76E5 /* nrf_error_sdm.h */; };
+		9D75161B1C2CC2980024EE87 /* nrf_error_soc.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44721C291214008F76E5 /* nrf_error_soc.h */; };
+		9D75161C1C2CC2980024EE87 /* nrf_mbr.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44731C291214008F76E5 /* nrf_mbr.h */; };
+		9D75161D1C2CC2980024EE87 /* nrf_sdm.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44741C291214008F76E5 /* nrf_sdm.h */; };
+		9D75161E1C2CC2980024EE87 /* nrf_soc.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44751C291214008F76E5 /* nrf_soc.h */; };
+		9D75161F1C2CC2980024EE87 /* nrf_svc.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44761C291214008F76E5 /* nrf_svc.h */; };
+		9D7516201C2CC2980024EE87 /* softdevice_assert.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44771C291214008F76E5 /* softdevice_assert.h */; };
+		9D7516211C2CC2980024EE87 /* nRF51822n.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44791C291214008F76E5 /* nRF51822n.h */; };
+		9D7516221C2CC2980024EE87 /* nRF51DiscoveredCharacteristic.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D447B1C291214008F76E5 /* nRF51DiscoveredCharacteristic.h */; };
+		9D7516231C2CC2980024EE87 /* nRF51Gap.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D447D1C291214008F76E5 /* nRF51Gap.h */; };
+		9D7516241C2CC2980024EE87 /* nRF51GattClient.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D447F1C291214008F76E5 /* nRF51GattClient.h */; };
+		9D7516251C2CC2980024EE87 /* nRF51GattServer.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44811C291214008F76E5 /* nRF51GattServer.h */; };
+		9D7516261C2CC2980024EE87 /* nRF51SecurityManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44831C291214008F76E5 /* nRF51SecurityManager.h */; };
+		9D7516271C2CC2980024EE87 /* nRF51ServiceDiscovery.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44851C291214008F76E5 /* nRF51ServiceDiscovery.h */; };
+		9D7516281C2CC2980024EE87 /* projectconfig.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44861C291214008F76E5 /* projectconfig.h */; };
+		9D7516291C2CC2980024EE87 /* nRF51822_API.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44871C291214008F76E5 /* nRF51822_API.h */; };
+		9D75162A1C2CC2980024EE87 /* pin_transform.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44891C291214008F76E5 /* pin_transform.h */; };
+		9D75162B1C2CC2980024EE87 /* Print.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D448B1C291214008F76E5 /* Print.h */; };
+		9D75162C1C2CC2980024EE87 /* Printable.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D448C1C291214008F76E5 /* Printable.h */; };
+		9D75162D1C2CC2980024EE87 /* WCharacter.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D448E1C291214008F76E5 /* WCharacter.h */; };
+		9D75162E1C2CC2980024EE87 /* wiring_analog.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44901C291214008F76E5 /* wiring_analog.h */; };
+		9D75162F1C2CC2980024EE87 /* wiring_buffer.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44921C291214008F76E5 /* wiring_buffer.h */; };
+		9D7516301C2CC2980024EE87 /* wiring_constants.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44931C291214008F76E5 /* wiring_constants.h */; };
+		9D7516311C2CC2980024EE87 /* wiring_delay.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44951C291214008F76E5 /* wiring_delay.h */; };
+		9D7516321C2CC2980024EE87 /* wiring_digital.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44971C291214008F76E5 /* wiring_digital.h */; };
+		9D7516331C2CC2980024EE87 /* wiring_interrupter.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44991C291214008F76E5 /* wiring_interrupter.h */; };
+		9D7516341C2CC2980024EE87 /* wiring_serial.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D449B1C291214008F76E5 /* wiring_serial.h */; };
+		9D7516351C2CC2980024EE87 /* wiring_shift_pulseIn.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D449D1C291214008F76E5 /* wiring_shift_pulseIn.h */; };
+		9D7516361C2CC2980024EE87 /* WMath.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D449F1C291214008F76E5 /* WMath.h */; };
+		9D7516371C2CC2980024EE87 /* WStream.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44A11C291214008F76E5 /* WStream.h */; };
+		9D7516381C2CC2980024EE87 /* WString.h in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D44A31C291214008F76E5 /* WString.h */; };
 		9D7D425A1C27C120008F76E5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D42591C27C120008F76E5 /* main.cpp */; };
 		9D7D42EB1C27C83A008F76E5 /* WheelFirmwareMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D42EA1C27C83A008F76E5 /* WheelFirmwareMain.cpp */; };
 		9D7D44A41C291214008F76E5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D43261C291213008F76E5 /* README.md */; };
@@ -1632,7 +1887,7 @@
 				9D7D44A31C291214008F76E5 /* WString.h */,
 			);
 			name = RBL_nRF51822;
-			path = ../../../Library/Arduino15/packages/RedBearLab/hardware/nRF51822/1.0.3/cores/RBL_nRF51822;
+			path = ../../../Library/Arduino15/packages/RedBearLab/hardware/nRF51822/1.0.4/cores/RBL_nRF51822;
 			sourceTree = "<group>";
 		};
 		9D7D43011C291213008F76E5 /* avr */ = {
@@ -2845,6 +3100,261 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D75153A1C2CC2970024EE87 /* SharedSettings.h in Sources */,
+				9D75153B1C2CC2970024EE87 /* CDWheelBluetoothShared.h in Sources */,
+				9D75153C1C2CC2970024EE87 /* BluetoothManager.h in Sources */,
+				9D75153D1C2CC2970024EE87 /* WheelService.h in Sources */,
+				9D75153E1C2CC2970024EE87 /* Arduino.h in Sources */,
+				9D75153F1C2CC2970024EE87 /* pgmspace.h in Sources */,
+				9D7515401C2CC2970024EE87 /* BLE.h in Sources */,
+				9D7515411C2CC2970024EE87 /* blecommon.h in Sources */,
+				9D7515421C2CC2970024EE87 /* BLEInstanceBase.h in Sources */,
+				9D7515431C2CC2970024EE87 /* CallChainOfFunctionPointersWithContext.h in Sources */,
+				9D7515441C2CC2970024EE87 /* DiscoveredCharacteristic.h in Sources */,
+				9D7515451C2CC2970024EE87 /* DiscoveredService.h in Sources */,
+				9D7515461C2CC2970024EE87 /* FunctionPointerWithContext.h in Sources */,
+				9D7515471C2CC2970024EE87 /* Gap.h in Sources */,
+				9D7515481C2CC2970024EE87 /* GapAdvertisingData.h in Sources */,
+				9D7515491C2CC2970024EE87 /* GapAdvertisingParams.h in Sources */,
+				9D75154A1C2CC2970024EE87 /* GapEvents.h in Sources */,
+				9D75154B1C2CC2970024EE87 /* GapScanningParams.h in Sources */,
+				9D75154C1C2CC2970024EE87 /* GattAttribute.h in Sources */,
+				9D75154D1C2CC2970024EE87 /* GattCallbackParamTypes.h in Sources */,
+				9D75154E1C2CC2970024EE87 /* GattCharacteristic.h in Sources */,
+				9D75154F1C2CC2970024EE87 /* GattClient.h in Sources */,
+				9D7515501C2CC2970024EE87 /* GattServer.h in Sources */,
+				9D7515511C2CC2970024EE87 /* GattServerEvents.h in Sources */,
+				9D7515521C2CC2970024EE87 /* GattService.h in Sources */,
+				9D7515531C2CC2970024EE87 /* SecurityManager.h in Sources */,
+				9D7515541C2CC2970024EE87 /* ServiceDiscovery.h in Sources */,
+				9D7515551C2CC2970024EE87 /* BatteryService.h in Sources */,
+				9D7515561C2CC2970024EE87 /* DeviceInformationService.h in Sources */,
+				9D7515571C2CC2970024EE87 /* DFUService.h in Sources */,
+				9D7515581C2CC2970024EE87 /* HealthThermometerService.h in Sources */,
+				9D7515591C2CC2970024EE87 /* HeartRateService.h in Sources */,
+				9D75155A1C2CC2970024EE87 /* iBeaconService.h in Sources */,
+				9D75155B1C2CC2970024EE87 /* LinkLossService.h in Sources */,
+				9D75155C1C2CC2970024EE87 /* UARTService.h in Sources */,
+				9D75155D1C2CC2970024EE87 /* URIBeaconConfigService.h in Sources */,
+				9D75155E1C2CC2970024EE87 /* UUID.h in Sources */,
+				9D75155F1C2CC2970024EE87 /* module.json in Sources */,
+				9D7515601C2CC2970024EE87 /* BLE_API.h in Sources */,
+				9D7515611C2CC2970024EE87 /* HardwareSerial.h in Sources */,
+				9D7515621C2CC2970024EE87 /* itoa.h in Sources */,
+				9D7515631C2CC2970024EE87 /* AnalogIn.h in Sources */,
+				9D7515641C2CC2970024EE87 /* AnalogOut.h in Sources */,
+				9D7515651C2CC2970024EE87 /* BusIn.h in Sources */,
+				9D7515661C2CC2970024EE87 /* BusInOut.h in Sources */,
+				9D7515671C2CC2970024EE87 /* BusOut.h in Sources */,
+				9D7515681C2CC2970024EE87 /* CallChain.h in Sources */,
+				9D7515691C2CC2970024EE87 /* CAN.h in Sources */,
+				9D75156A1C2CC2970024EE87 /* can_helper.h in Sources */,
+				9D75156B1C2CC2970024EE87 /* CircularBuffer.h in Sources */,
+				9D75156C1C2CC2970024EE87 /* CThunk.h in Sources */,
+				9D75156D1C2CC2970024EE87 /* DigitalIn.h in Sources */,
+				9D75156E1C2CC2970024EE87 /* DigitalInOut.h in Sources */,
+				9D75156F1C2CC2970024EE87 /* DigitalOut.h in Sources */,
+				9D7515701C2CC2970024EE87 /* DirHandle.h in Sources */,
+				9D7515711C2CC2970024EE87 /* Ethernet.h in Sources */,
+				9D7515721C2CC2970024EE87 /* FileBase.h in Sources */,
+				9D7515731C2CC2970024EE87 /* FileHandle.h in Sources */,
+				9D7515741C2CC2970024EE87 /* FileLike.h in Sources */,
+				9D7515751C2CC2970024EE87 /* FilePath.h in Sources */,
+				9D7515761C2CC2970024EE87 /* FileSystemLike.h in Sources */,
+				9D7515771C2CC2970024EE87 /* FunctionPointer.h in Sources */,
+				9D7515781C2CC2970024EE87 /* I2C.h in Sources */,
+				9D7515791C2CC2970024EE87 /* I2CSlave.h in Sources */,
+				9D75157A1C2CC2970024EE87 /* InterruptIn.h in Sources */,
+				9D75157B1C2CC2970024EE87 /* InterruptManager.h in Sources */,
+				9D75157C1C2CC2970024EE87 /* LocalFileSystem.h in Sources */,
+				9D75157D1C2CC2970024EE87 /* LowPowerTicker.h in Sources */,
+				9D75157E1C2CC2970024EE87 /* LowPowerTimeout.h in Sources */,
+				9D75157F1C2CC2970024EE87 /* LowPowerTimer.h in Sources */,
+				9D7515801C2CC2970024EE87 /* mbed.h in Sources */,
+				9D7515811C2CC2980024EE87 /* mbed_assert.h in Sources */,
+				9D7515821C2CC2980024EE87 /* mbed_debug.h in Sources */,
+				9D7515831C2CC2980024EE87 /* mbed_error.h in Sources */,
+				9D7515841C2CC2980024EE87 /* mbed_interface.h in Sources */,
+				9D7515851C2CC2980024EE87 /* platform.h in Sources */,
+				9D7515861C2CC2980024EE87 /* PortIn.h in Sources */,
+				9D7515871C2CC2980024EE87 /* PortInOut.h in Sources */,
+				9D7515881C2CC2980024EE87 /* PortOut.h in Sources */,
+				9D7515891C2CC2980024EE87 /* PwmOut.h in Sources */,
+				9D75158A1C2CC2980024EE87 /* RawSerial.h in Sources */,
+				9D75158B1C2CC2980024EE87 /* rtc_time.h in Sources */,
+				9D75158C1C2CC2980024EE87 /* semihost_api.h in Sources */,
+				9D75158D1C2CC2980024EE87 /* Serial.h in Sources */,
+				9D75158E1C2CC2980024EE87 /* SerialBase.h in Sources */,
+				9D75158F1C2CC2980024EE87 /* SPI.h in Sources */,
+				9D7515901C2CC2980024EE87 /* SPISlave.h in Sources */,
+				9D7515911C2CC2980024EE87 /* Stream.h in Sources */,
+				9D7515921C2CC2980024EE87 /* Ticker.h in Sources */,
+				9D7515931C2CC2980024EE87 /* Timeout.h in Sources */,
+				9D7515941C2CC2980024EE87 /* Timer.h in Sources */,
+				9D7515951C2CC2980024EE87 /* TimerEvent.h in Sources */,
+				9D7515961C2CC2980024EE87 /* toolchain.h in Sources */,
+				9D7515971C2CC2980024EE87 /* Transaction.h in Sources */,
+				9D7515981C2CC2980024EE87 /* wait_api.h in Sources */,
+				9D7515991C2CC2980024EE87 /* CMakeLists.txt in Sources */,
+				9D75159A1C2CC2980024EE87 /* analogin_api.h in Sources */,
+				9D75159B1C2CC2980024EE87 /* analogout_api.h in Sources */,
+				9D75159C1C2CC2980024EE87 /* buffer.h in Sources */,
+				9D75159D1C2CC2980024EE87 /* can_api.h in Sources */,
+				9D75159E1C2CC2980024EE87 /* dma_api.h in Sources */,
+				9D75159F1C2CC2980024EE87 /* ethernet_api.h in Sources */,
+				9D7515A01C2CC2980024EE87 /* gpio_api.h in Sources */,
+				9D7515A11C2CC2980024EE87 /* gpio_irq_api.h in Sources */,
+				9D7515A21C2CC2980024EE87 /* i2c_api.h in Sources */,
+				9D7515A31C2CC2980024EE87 /* lp_ticker_api.h in Sources */,
+				9D7515A41C2CC2980024EE87 /* pinmap.h in Sources */,
+				9D7515A51C2CC2980024EE87 /* port_api.h in Sources */,
+				9D7515A61C2CC2980024EE87 /* pwmout_api.h in Sources */,
+				9D7515A71C2CC2980024EE87 /* rtc_api.h in Sources */,
+				9D7515A81C2CC2980024EE87 /* serial_api.h in Sources */,
+				9D7515A91C2CC2980024EE87 /* sleep_api.h in Sources */,
+				9D7515AA1C2CC2980024EE87 /* spi_api.h in Sources */,
+				9D7515AB1C2CC2980024EE87 /* ticker_api.h in Sources */,
+				9D7515AC1C2CC2980024EE87 /* us_ticker_api.h in Sources */,
+				9D7515AD1C2CC2980024EE87 /* module.json in Sources */,
+				9D7515AE1C2CC2980024EE87 /* core_ca9.h in Sources */,
+				9D7515AF1C2CC2980024EE87 /* core_ca_mmu.h in Sources */,
+				9D7515B01C2CC2980024EE87 /* core_caFunc.h in Sources */,
+				9D7515B11C2CC2980024EE87 /* core_caInstr.h in Sources */,
+				9D7515B21C2CC2980024EE87 /* core_cm0.h in Sources */,
+				9D7515B31C2CC2980024EE87 /* core_cm0plus.h in Sources */,
+				9D7515B41C2CC2980024EE87 /* core_cm3.h in Sources */,
+				9D7515B51C2CC2980024EE87 /* core_cm4.h in Sources */,
+				9D7515B61C2CC2980024EE87 /* core_cm4_simd.h in Sources */,
+				9D7515B71C2CC2980024EE87 /* core_cm7.h in Sources */,
+				9D7515B81C2CC2980024EE87 /* core_cmFunc.h in Sources */,
+				9D7515B91C2CC2980024EE87 /* core_cmInstr.h in Sources */,
+				9D7515BA1C2CC2980024EE87 /* core_cmSimd.h in Sources */,
+				9D7515BB1C2CC2980024EE87 /* cmsis.h in Sources */,
+				9D7515BC1C2CC2980024EE87 /* cmsis_nvic.h in Sources */,
+				9D7515BD1C2CC2980024EE87 /* compiler_abstraction.h in Sources */,
+				9D7515BE1C2CC2980024EE87 /* nrf.h in Sources */,
+				9D7515BF1C2CC2980024EE87 /* nrf51.h in Sources */,
+				9D7515C01C2CC2980024EE87 /* nrf51_bitfields.h in Sources */,
+				9D7515C11C2CC2980024EE87 /* nrf_delay.h in Sources */,
+				9D7515C21C2CC2980024EE87 /* system_nrf51.h in Sources */,
+				9D7515C31C2CC2980024EE87 /* gpio_object.h in Sources */,
+				9D7515C41C2CC2980024EE87 /* crc16.h in Sources */,
+				9D7515C51C2CC2980024EE87 /* app_scheduler.h in Sources */,
+				9D7515C61C2CC2980024EE87 /* app_error.h in Sources */,
+				9D7515C71C2CC2980024EE87 /* app_util.h in Sources */,
+				9D7515C81C2CC2980024EE87 /* nrf51822_bootloader.hex in Sources */,
+				9D7515C91C2CC2980024EE87 /* s130_nrf51_1.0.0_licence_agreement.txt in Sources */,
+				9D7515CA1C2CC2980024EE87 /* s130_nrf51_1.0.0_softdevice.hex in Sources */,
+				9D7515CB1C2CC2980024EE87 /* objects.h in Sources */,
+				9D7515CC1C2CC2980024EE87 /* PeripheralNames.h in Sources */,
+				9D7515CD1C2CC2980024EE87 /* PortNames.h in Sources */,
+				9D7515CE1C2CC2980024EE87 /* device.h in Sources */,
+				9D7515CF1C2CC2980024EE87 /* PinNames.h in Sources */,
+				9D7515D01C2CC2980024EE87 /* device.h in Sources */,
+				9D7515D11C2CC2980024EE87 /* PinNames.h in Sources */,
+				9D7515D21C2CC2980024EE87 /* module.json in Sources */,
+				9D7515D31C2CC2980024EE87 /* btle.h in Sources */,
+				9D7515D41C2CC2980024EE87 /* btle_advertising.h in Sources */,
+				9D7515D51C2CC2980024EE87 /* btle_discovery.h in Sources */,
+				9D7515D61C2CC2980024EE87 /* btle_gap.h in Sources */,
+				9D7515D71C2CC2980024EE87 /* btle_security.h in Sources */,
+				9D7515D81C2CC2980024EE87 /* custom_helper.h in Sources */,
+				9D7515D91C2CC2980024EE87 /* ansi_escape.h in Sources */,
+				9D7515DA1C2CC2980024EE87 /* assertion.h in Sources */,
+				9D7515DB1C2CC2980024EE87 /* binary.h in Sources */,
+				9D7515DC1C2CC2980024EE87 /* ble_error.h in Sources */,
+				9D7515DD1C2CC2980024EE87 /* common.h in Sources */,
+				9D7515DE1C2CC2980024EE87 /* compiler.h in Sources */,
+				9D7515DF1C2CC2980024EE87 /* ble_radio_notification.h in Sources */,
+				9D7515E01C2CC2980024EE87 /* ble_dfu.h in Sources */,
+				9D7515E11C2CC2980024EE87 /* ble_advdata.h in Sources */,
+				9D7515E21C2CC2980024EE87 /* ble_advdata_parser.h in Sources */,
+				9D7515E31C2CC2980024EE87 /* ble_conn_params.h in Sources */,
+				9D7515E41C2CC2980024EE87 /* ble_date_time.h in Sources */,
+				9D7515E51C2CC2980024EE87 /* ble_sensor_location.h in Sources */,
+				9D7515E61C2CC2980024EE87 /* ble_srv_common.h in Sources */,
+				9D7515E71C2CC2980024EE87 /* device_manager_cnfg.h in Sources */,
+				9D7515E81C2CC2980024EE87 /* device_manager.h in Sources */,
+				9D7515E91C2CC2980024EE87 /* ble_flash.h in Sources */,
+				9D7515EA1C2CC2980024EE87 /* compiler_abstraction.h in Sources */,
+				9D7515EB1C2CC2980024EE87 /* nrf.h in Sources */,
+				9D7515EC1C2CC2980024EE87 /* nrf51.h in Sources */,
+				9D7515ED1C2CC2980024EE87 /* nrf51_bitfields.h in Sources */,
+				9D7515EE1C2CC2980024EE87 /* nrf51_deprecated.h in Sources */,
+				9D7515EF1C2CC2980024EE87 /* nrf_ecb.h in Sources */,
+				9D7515F01C2CC2980024EE87 /* nrf_gpio.h in Sources */,
+				9D7515F11C2CC2980024EE87 /* nrf_gpiote.h in Sources */,
+				9D7515F21C2CC2980024EE87 /* nrf_nvmc.h in Sources */,
+				9D7515F31C2CC2980024EE87 /* nrf_temp.h in Sources */,
+				9D7515F41C2CC2980024EE87 /* pstorage_platform.h in Sources */,
+				9D7515F51C2CC2980024EE87 /* pstorage.h in Sources */,
+				9D7515F61C2CC2980024EE87 /* bootloader.h in Sources */,
+				9D7515F71C2CC2980024EE87 /* bootloader_types.h in Sources */,
+				9D7515F81C2CC2980024EE87 /* bootloader_util.h in Sources */,
+				9D7515F91C2CC2980024EE87 /* dfu.h in Sources */,
+				9D7515FA1C2CC2980024EE87 /* dfu_bank_internal.h in Sources */,
+				9D7515FB1C2CC2980024EE87 /* dfu_ble_svc.h in Sources */,
+				9D7515FC1C2CC2980024EE87 /* dfu_ble_svc_internal.h in Sources */,
+				9D7515FD1C2CC2980024EE87 /* dfu_init.h in Sources */,
+				9D7515FE1C2CC2980024EE87 /* dfu_transport.h in Sources */,
+				9D7515FF1C2CC2980024EE87 /* dfu_types.h in Sources */,
+				9D7516001C2CC2980024EE87 /* dfu_app_handler.h in Sources */,
+				9D7516011C2CC2980024EE87 /* hci_mem_pool_internal.h in Sources */,
+				9D7516021C2CC2980024EE87 /* hci_mem_pool.h in Sources */,
+				9D7516031C2CC2980024EE87 /* app_util_platform.h in Sources */,
+				9D7516041C2CC2980024EE87 /* common.h in Sources */,
+				9D7516051C2CC2980024EE87 /* nordic_common.h in Sources */,
+				9D7516061C2CC2980024EE87 /* nrf_assert.h in Sources */,
+				9D7516071C2CC2980024EE87 /* sdk_common.h in Sources */,
+				9D7516081C2CC2980024EE87 /* sdk_errors.h in Sources */,
+				9D7516091C2CC2980024EE87 /* sdk_os.h in Sources */,
+				9D75160A1C2CC2980024EE87 /* ant_stack_handler_types.h in Sources */,
+				9D75160B1C2CC2980024EE87 /* ble_stack_handler_types.h in Sources */,
+				9D75160C1C2CC2980024EE87 /* softdevice_handler.h in Sources */,
+				9D75160D1C2CC2980024EE87 /* softdevice_handler_appsh.h in Sources */,
+				9D75160E1C2CC2980024EE87 /* ble_api.dox in Sources */,
+				9D75160F1C2CC2980024EE87 /* ble.h in Sources */,
+				9D7516101C2CC2980024EE87 /* ble_err.h in Sources */,
+				9D7516111C2CC2980024EE87 /* ble_gap.h in Sources */,
+				9D7516121C2CC2980024EE87 /* ble_gatt.h in Sources */,
+				9D7516131C2CC2980024EE87 /* ble_gattc.h in Sources */,
+				9D7516141C2CC2980024EE87 /* ble_gatts.h in Sources */,
+				9D7516151C2CC2980024EE87 /* ble_hci.h in Sources */,
+				9D7516161C2CC2980024EE87 /* ble_l2cap.h in Sources */,
+				9D7516171C2CC2980024EE87 /* ble_ranges.h in Sources */,
+				9D7516181C2CC2980024EE87 /* ble_types.h in Sources */,
+				9D7516191C2CC2980024EE87 /* nrf_error.h in Sources */,
+				9D75161A1C2CC2980024EE87 /* nrf_error_sdm.h in Sources */,
+				9D75161B1C2CC2980024EE87 /* nrf_error_soc.h in Sources */,
+				9D75161C1C2CC2980024EE87 /* nrf_mbr.h in Sources */,
+				9D75161D1C2CC2980024EE87 /* nrf_sdm.h in Sources */,
+				9D75161E1C2CC2980024EE87 /* nrf_soc.h in Sources */,
+				9D75161F1C2CC2980024EE87 /* nrf_svc.h in Sources */,
+				9D7516201C2CC2980024EE87 /* softdevice_assert.h in Sources */,
+				9D7516211C2CC2980024EE87 /* nRF51822n.h in Sources */,
+				9D7516221C2CC2980024EE87 /* nRF51DiscoveredCharacteristic.h in Sources */,
+				9D7516231C2CC2980024EE87 /* nRF51Gap.h in Sources */,
+				9D7516241C2CC2980024EE87 /* nRF51GattClient.h in Sources */,
+				9D7516251C2CC2980024EE87 /* nRF51GattServer.h in Sources */,
+				9D7516261C2CC2980024EE87 /* nRF51SecurityManager.h in Sources */,
+				9D7516271C2CC2980024EE87 /* nRF51ServiceDiscovery.h in Sources */,
+				9D7516281C2CC2980024EE87 /* projectconfig.h in Sources */,
+				9D7516291C2CC2980024EE87 /* nRF51822_API.h in Sources */,
+				9D75162A1C2CC2980024EE87 /* pin_transform.h in Sources */,
+				9D75162B1C2CC2980024EE87 /* Print.h in Sources */,
+				9D75162C1C2CC2980024EE87 /* Printable.h in Sources */,
+				9D75162D1C2CC2980024EE87 /* WCharacter.h in Sources */,
+				9D75162E1C2CC2980024EE87 /* wiring_analog.h in Sources */,
+				9D75162F1C2CC2980024EE87 /* wiring_buffer.h in Sources */,
+				9D7516301C2CC2980024EE87 /* wiring_constants.h in Sources */,
+				9D7516311C2CC2980024EE87 /* wiring_delay.h in Sources */,
+				9D7516321C2CC2980024EE87 /* wiring_digital.h in Sources */,
+				9D7516331C2CC2980024EE87 /* wiring_interrupter.h in Sources */,
+				9D7516341C2CC2980024EE87 /* wiring_serial.h in Sources */,
+				9D7516351C2CC2980024EE87 /* wiring_shift_pulseIn.h in Sources */,
+				9D7516361C2CC2980024EE87 /* WMath.h in Sources */,
+				9D7516371C2CC2980024EE87 /* WStream.h in Sources */,
+				9D7516381C2CC2980024EE87 /* WString.h in Sources */,
 				9D7D425A1C27C120008F76E5 /* main.cpp in Sources */,
 				9D7D45001C291214008F76E5 /* nRF51GattClient.cpp in Sources */,
 				AA2A151220212328AA000005 /* abi.cpp in Sources */,

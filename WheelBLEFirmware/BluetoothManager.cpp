@@ -10,7 +10,7 @@
 #include "SharedSettings.h"
 
 #define SHORT_NAME "CyrWhl"
-#define LONG_NAME "LED Cyr Wheel"
+#define LONG_NAME "LED Cyr Wheel RB"
 
 
 BluetoothManager *g_currentManager = NULL;
@@ -73,6 +73,15 @@ void BluetoothManager::setup() {
     
     
     m_ble.init();
+
+    // High performance params (these are wrong..I need to figure them out better!)
+    Gap::ConnectionParams_t connectionParams;
+    connectionParams.minConnectionInterval = 20;
+    connectionParams.maxConnectionInterval = 40;
+    connectionParams.connectionSupervisionTimeout = 500;
+    connectionParams.slaveLatency = 0;
+  // corbin, defaults seem better?? or I'm not translating these values right??
+//    m_ble.gap().setPreferredConnectionParams(&connectionParams);
     
     // Setup our handlers for connections
     m_ble.onConnection(connectionCallback);
@@ -84,14 +93,19 @@ void BluetoothManager::setup() {
     m_ble.gap().onTimeout(onTimeoutCallback);
     
     // setup adv_data and srp_data
+
+    // NOTE: limited space! 29 bytes..I think. The response can have more data
+    
     m_ble.accumulateAdvertisingPayload(GapAdvertisingData::BREDR_NOT_SUPPORTED);
+    
+    // 16 bytes
+    m_ble.accumulateAdvertisingPayload(GapAdvertisingData::INCOMPLETE_LIST_128BIT_SERVICE_IDS, (const uint8_t *)WheelService::UUID_WHEEL_SERVICE_REVERSED, sizeof(WheelService::UUID_WHEEL_SERVICE_REVERSED));
+
+    // 13 bytes (default).. if it is longer, i'm not sure what i should do or deal with
+    m_ble.accumulateScanResponse(GapAdvertisingData::COMPLETE_LOCAL_NAME,                            (const uint8_t *)LONG_NAME, sizeof(LONG_NAME) - 1);
+
+    // 6 bytes
 //    m_ble.accumulateAdvertisingPayload(GapAdvertisingData::SHORTENED_LOCAL_NAME, (const uint8_t *)SHORT_NAME, sizeof(SHORT_NAME) - 1);
-//    m_ble.accumulateAdvertisingPayload(GapAdvertisingData::COMPLETE_LOCAL_NAME,                            (const uint8_t *)"LED Cyr Wheel", sizeof("LED Cyr Wheel") - 1);
-    
-    m_ble.accumulateAdvertisingPayload(GapAdvertisingData::INCOMPLETE_LIST_128BIT_SERVICE_IDS, WheelService::UUID_WHEEL_SERVICE, sizeof(WheelService::UUID_WHEEL_SERVICE));
-    
-//    m_ble.accumulateScanResponse(GapAdvertisingData::SHORTENED_LOCAL_NAME, (const uint8_t *)SHORT_NAME, sizeof(SHORT_NAME) - 1);
-    m_ble.accumulateScanResponse(GapAdvertisingData::INCOMPLETE_LIST_128BIT_SERVICE_IDS, (const uint8_t *)WheelService::UUID_WHEEL_SERVICE, sizeof(WheelService::UUID_WHEEL_SERVICE));
     
     
     // NOTE: longest length: BLE_GAP_DEVNAME_MAX_LEN // 31
@@ -115,7 +129,7 @@ void BluetoothManager::setup() {
     // slave latency to 0
     
     
-    // set adv_timeout, in seconds
+    // set adv_timeout, in seconds; we want to timeout really fast so I can re-connect later (I think..)
     m_ble.setAdvertisingTimeout(0);
 
     
