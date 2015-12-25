@@ -21,7 +21,7 @@
 // See Boards.txt for <tag>.name=Arduino Uno (16 MHz)
 //
 //BOARD_TAG  = NANO
-BOARD_TAG  = nRF51822_NANO
+BOARD_TAG  = nRF51822_NANO_32KB
 
 // Port (optionnal)
 // most common are /dev/tty.usbserial*, /dev/tty.usbmodem* or /dev/tty.uart*
