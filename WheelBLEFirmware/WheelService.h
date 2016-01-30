@@ -17,7 +17,7 @@
 
 class WheelUARTService : public UARTService {
 public:
-    WheelUARTService(BLE &ble) : UARTService(ble) { m_dataLeft = 0; }
+    WheelUARTService(BLE &ble);
     int available() {
         if (numBytesReceived > 0) {
             return numBytesReceived - receiveBufferIndex;

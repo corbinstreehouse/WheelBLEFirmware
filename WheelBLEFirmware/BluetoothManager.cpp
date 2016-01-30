@@ -59,6 +59,11 @@ BluetoothManager::BluetoothManager() :
     // DON't put logs here! it will kill stuff..
 }
 
+static inline uint32_t msec_to_1_25msec(uint32_t interval_ms)
+{
+    return (interval_ms * 4) / 5;
+}
+
 
 void BluetoothManager::setup() {
     g_currentManager = this;
@@ -76,13 +81,13 @@ void BluetoothManager::setup() {
 
     // High performance params (these are wrong..I need to figure them out better!)
     Gap::ConnectionParams_t connectionParams;
-    connectionParams.minConnectionInterval = 20;
-    connectionParams.maxConnectionInterval = 40;
-    connectionParams.connectionSupervisionTimeout = 500;
+    // NOTE: these connection params are MUCH faster!! 577ms to transfer 1k, vs 10s
+    connectionParams.minConnectionInterval = msec_to_1_25msec(20); // in 1.25 ms units
+    connectionParams.maxConnectionInterval = msec_to_1_25msec(40); // in 1.25 ms units
+    connectionParams.connectionSupervisionTimeout = 500 / 10; // 500ms to 10ms units
     connectionParams.slaveLatency = 0;
-  // corbin, defaults seem better?? or I'm not translating these values right??
-//    m_ble.gap().setPreferredConnectionParams(&connectionParams);
-    
+    m_ble.gap().setPreferredConnectionParams(&connectionParams);
+
     // Setup our handlers for connections
     m_ble.onConnection(connectionCallback);
     m_ble.gap().onDisconnection(disconnectionCallBack);

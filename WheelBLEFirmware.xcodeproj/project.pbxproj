@@ -1887,7 +1887,7 @@
 				9D7D44A31C291214008F76E5 /* WString.h */,
 			);
 			name = RBL_nRF51822;
-			path = ../../../Library/Arduino15/packages/RedBearLab/hardware/nRF51822/1.0.4/cores/RBL_nRF51822;
+			path = ../../../Library/Arduino15/packages/RedBearLab/hardware/nRF51822/1.0.5/cores/RBL_nRF51822;
 			sourceTree = "<group>";
 		};
 		9D7D43011C291213008F76E5 /* avr */ = {

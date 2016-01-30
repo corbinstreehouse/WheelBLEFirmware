@@ -13,10 +13,16 @@
 uint32_t start;
 int count = 0;
 
+// 2kB / second..
+
+WheelUARTService::WheelUARTService(BLE &ble)  : UARTService(ble) {
+    m_dataLeft = 0;
+}
+
 void WheelUARTService::handleDataWritten() {
     
     if (m_dataLeft <= 0) {
-        DEBUG_PRINTLN("Starting to get data...");
+        DEBUG_PRINTLN("Starting to get data v3...");
         // start over!
         // read the size
         int32_t totalBytes = 0;
